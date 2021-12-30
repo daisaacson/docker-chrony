@@ -7,4 +7,6 @@ sed -i.dockersave \
   -e 's/pool.ntp.org/'"$_SERVER_"'/gi;' \
   /etc/chrony/chrony.conf
 
+echo "allow all" >> /etc/chrony/chrony.conf
+
 exec "$@"
