@@ -1,4 +1,4 @@
-FROM alpine:3.18.5
+FROM alpine:3.19.0
 RUN apk --no-cache update && apk --no-cache upgrade && apk add --no-cache bash execline chrony
 COPY docker-entrypoint.sh /usr/local/bin
 EXPOSE 123/udp
